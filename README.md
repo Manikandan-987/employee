@@ -33,11 +33,9 @@ The Titanic dataset provides information on the passengers aboard the RMS Titani
 ## 💡 Use Cases
 - 🎯 Detect the outliers(skewed data)
 - 📊 Exploratory data analysis and visualizations
-- 🧠
 ## 🛠️ Technologies Used
 - Python 🐍
-- Pandas, NumPy
+- Pandas
 - Matplotlib, Seaborn
-- Scikit-learn
 - Jupyter Notebooks
 
