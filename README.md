@@ -1,4 +1,4 @@
-# 🚢 Titanic Dataset - Survival Prediction Project
+#  'employee_clean.csv- Survival Prediction Project
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue?logo=python)](https://www.python.org/)
@@ -7,7 +7,7 @@
 This project uses the famous Titanic dataset to explore data analysis, feature engineering, and machine learning to predict which passengers survived the Titanic shipwreck.
 
 
-## 📁 Dataset: `titanic.csv`
+## 📁 Dataset: `employee_clean.csv`
 
 ### 🔍 Overview
 
