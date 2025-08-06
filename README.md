@@ -31,10 +31,9 @@ The Titanic dataset provides information on the passengers aboard the RMS Titani
 | `Cabin`       | Cabin number (if available) |
 | `Embarked`    | Port of Embarkation (`C` = Cherbourg, `Q` = Queenstown, `S` = Southampton) |
 ## 💡 Use Cases
-- 🎯 Binary classification (survived vs. not survived)
+- 🎯 Detect the outliers(skewed data)
 - 📊 Exploratory data analysis and visualizations
-- 🧠 Feature engineering and preprocessing practice
-- 🤖 Supervised machine learning (Logistic Regression, Decision Trees, etc.)
+- 🧠
 ## 🛠️ Technologies Used
 - Python 🐍
 - Pandas, NumPy
