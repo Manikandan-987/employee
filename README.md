@@ -1,44 +1,78 @@
-Cleaned Employee Dataset
+# 🚢 Titanic Dataset - Survival Prediction Project
 
-This repository contains a cleaned dataset of employee records, ideal for HR analytics, machine learning, and data visualization projects.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue?logo=python)](https://www.python.org/)
+[![Kaggle Ready](https://img.shields.io/badge/Kaggle-Compatible-blue)]()
 
-Dataset Overview
+This project uses the famous Titanic dataset to explore data analysis, feature engineering, and machine learning to predict which passengers survived the Titanic shipwreck.
 
-- **File Name:** `employee_clean.csv`
-- **Records:** [Number of records]
-- **Features:** 12 columns
-- **Format:** CSV (Comma-Separated Values)
+---
 
-Columns Description
+## 📁 Dataset: `titanic.csv`
 
-| Column Name           | Description                                                                 |
-|-----------------------|-----------------------------------------------------------------------------|
-| PassengerId           |	A unique ID for each passenger.                                             |
-| Survived              |Survival status (0 = No, 1 = Yes). Indicates whether the passenger survived  |
-| Pclass                | Ticket class (1 = 1st, 2 = 2nd, 3 = 3rd). Represents socioeconomic status.  |
-| Name                  | Full name of the passenger, including title (e.g., Mr., Mrs., Miss.).       |
-| Sex                   | Gender of the passenger (male/female)                                       |
-| Age                   | Age of the passenger in years (can contain missing values).                 |
-| SibSp                 |	Number of siblings or spouses the passenger had aboard the Titanic.         |
-| Parch                 | Number of parents or children the passenger had aboard the Titanic.         |
-|Ticket                 | Ticket number (can contain duplicates or mixed formats).                    |
-| Fare                  | Amount of money the passenger paid for the ticket.                          |
-|Cabin                  | Cabin number where the passenger stayed (many missing values).              |
-| Embarked              | Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton).       |
-                                
-Possible Use Cases
+### 🔍 Overview
 
-- HR Attrition Prediction
-- Employee Performance Analysis
-- Classification and Regression Modeling
-- Exploratory Data Analysis (EDA)
-- Recruitment and Training Optimization
+The Titanic dataset provides information on the passengers aboard the RMS Titanic. The goal is to predict whether a passenger survived or not using features like age, gender, ticket class, fare, and more.
 
-Example Applications
+---
 
-- Predict high-performing employees
-- Analyze impact of training on performance
-- Build dashboards for HR insights
+### 🧾 Column Descriptions
 
+| Column Name   | Description |
+|---------------|-------------|
+| `PassengerId` | Unique identifier assigned to each passenger |
+| `Survived`    | Survival status (0 = No, 1 = Yes) |
+| `Pclass`      | Ticket class (1 = 1st, 2 = 2nd, 3 = 3rd) |
+| `Name`        | Full name of the passenger |
+| `Sex`         | Gender of the passenger |
+| `Age`         | Age in years |
+| `SibSp`       | Number of siblings/spouses aboard |
+| `Parch`       | Number of parents/children aboard |
+| `Ticket`      | Ticket number |
+| `Fare`        | Fare paid for the ticket |
+| `Cabin`       | Cabin number (if available) |
+| `Embarked`    | Port of Embarkation (`C` = Cherbourg, `Q` = Queenstown, `S` = Southampton) |
 
+---
 
+## 💡 Use Cases
+
+- 🎯 Binary classification (survived vs. not survived)
+- 📊 Exploratory data analysis and visualizations
+- 🧠 Feature engineering and preprocessing practice
+- 🤖 Supervised machine learning (Logistic Regression, Decision Trees, etc.)
+
+---
+
+## 🛠️ Technologies Used
+
+- Python 🐍
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-learn
+- Jupyter Notebooks
+
+---
+
+## 📈 Sample Python Code
+
+```python
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load the dataset
+df = pd.read_csv('titanic.csv')
+
+# View basic info
+print(df.info())
+
+# Visualize survival by gender
+sns.countplot(x='Survived', hue='Sex', data=df)
+plt.title('Survival Count by Gender')
+plt.show()
+
+# Check correlation between numerical features
+sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
+plt.title('Feature Correlation Heatmap')
+plt.show()
