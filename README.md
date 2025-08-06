@@ -41,15 +41,4 @@ The Titanic dataset provides information on the passengers aboard the RMS Titani
 - Matplotlib, Seaborn
 - Scikit-learn
 - Jupyter Notebooks
-## 📈 Sample Python Code
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-df = pd.read_csv('titanic.csv')
-print(df.info())
-sns.countplot(x='Survived', hue='Sex', data=df)
-plt.title('Survival Count by Gender')
-plt.show()
-sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
-plt.title('Feature Correlation Heatmap')
-plt.show()
+
