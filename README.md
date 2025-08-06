@@ -6,7 +6,6 @@
 
 This project uses the famous Titanic dataset to explore data analysis, feature engineering, and machine learning to predict which passengers survived the Titanic shipwreck.
 
----
 
 ## 📁 Dataset: `titanic.csv`
 
@@ -14,7 +13,6 @@ This project uses the famous Titanic dataset to explore data analysis, feature e
 
 The Titanic dataset provides information on the passengers aboard the RMS Titanic. The goal is to predict whether a passenger survived or not using features like age, gender, ticket class, fare, and more.
 
----
 
 ### 🧾 Column Descriptions
 
@@ -33,7 +31,6 @@ The Titanic dataset provides information on the passengers aboard the RMS Titani
 | `Cabin`       | Cabin number (if available) |
 | `Embarked`    | Port of Embarkation (`C` = Cherbourg, `Q` = Queenstown, `S` = Southampton) |
 
----
 
 ## 💡 Use Cases
 
@@ -42,7 +39,7 @@ The Titanic dataset provides information on the passengers aboard the RMS Titani
 - 🧠 Feature engineering and preprocessing practice
 - 🤖 Supervised machine learning (Logistic Regression, Decision Trees, etc.)
 
----
+
 
 ## 🛠️ Technologies Used
 
@@ -52,7 +49,6 @@ The Titanic dataset provides information on the passengers aboard the RMS Titani
 - Scikit-learn
 - Jupyter Notebooks
 
----
 
 ## 📈 Sample Python Code
 
