@@ -13,19 +13,18 @@ Columns Description
 
 | Column Name           | Description                                                                 |
 |-----------------------|-----------------------------------------------------------------------------|
-| PassengerId           |Unique identifier for each passenger. Usually an integer starting from 1.                                       |
-| Survived              |Indicates whether the passenger survived the Titanic disaster0 = No, 1 = Yes.                       |
-| Pclass                | Passenger class (a proxy for socio-economic status): 
-                             1 = Upper class, 2 = Middle class, 3 = Lower class                                                   |
-| Name                  | Full name of the passenger, including title (e.g., Mr., Mrs., Miss.).                                           |
-| Sex                   | Gender of the employee                                                     |
-| Age                   | Age of the passenger in years. May contain fractional values (e.g., 29.5). Some values may be missing.                           |
-| SibSp                 | Number of training programs attended                                       |
-| Parch                 | Age of the employee                                                        |
-|Ticket                 | Rating from the previous year (1 to 5)                                     |
-| Fare                  | Total years of service in the organization                                 |
-|Cabin                  | Whether KPIs were met above 80% (1: Yes, 0: No)                            |
-| Embarked              | Whether the employee won any awards (1: Yes, 0: No)                        |
+| PassengerId           |	A unique ID for each passenger.                                             |
+| Survived              |Survival status (0 = No, 1 = Yes). Indicates whether the passenger survived  |
+| Pclass                | Ticket class (1 = 1st, 2 = 2nd, 3 = 3rd). Represents socioeconomic status.  |
+| Name                  | Full name of the passenger, including title (e.g., Mr., Mrs., Miss.).       |
+| Sex                   | Gender of the passenger (male/female)                                       |
+| Age                   | Age of the passenger in years (can contain missing values).                 |
+| SibSp                 |	Number of siblings or spouses the passenger had aboard the Titanic.         |
+| Parch                 | Number of parents or children the passenger had aboard the Titanic.         |
+|Ticket                 | Ticket number (can contain duplicates or mixed formats).                    |
+| Fare                  | Amount of money the passenger paid for the ticket.                          |
+|Cabin                  | Cabin number where the passenger stayed (many missing values).              |
+| Embarked              | Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton).       |
                                 
 Possible Use Cases
 
