@@ -30,45 +30,26 @@ The Titanic dataset provides information on the passengers aboard the RMS Titani
 | `Fare`        | Fare paid for the ticket |
 | `Cabin`       | Cabin number (if available) |
 | `Embarked`    | Port of Embarkation (`C` = Cherbourg, `Q` = Queenstown, `S` = Southampton) |
-
-
 ## 💡 Use Cases
-
 - 🎯 Binary classification (survived vs. not survived)
 - 📊 Exploratory data analysis and visualizations
 - 🧠 Feature engineering and preprocessing practice
 - 🤖 Supervised machine learning (Logistic Regression, Decision Trees, etc.)
-
-
-
 ## 🛠️ Technologies Used
-
 - Python 🐍
 - Pandas, NumPy
 - Matplotlib, Seaborn
 - Scikit-learn
 - Jupyter Notebooks
-
-
 ## 📈 Sample Python Code
-
-```python
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-
-# Load the dataset
 df = pd.read_csv('titanic.csv')
-
-# View basic info
 print(df.info())
-
-# Visualize survival by gender
 sns.countplot(x='Survived', hue='Sex', data=df)
 plt.title('Survival Count by Gender')
 plt.show()
-
-# Check correlation between numerical features
 sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
 plt.title('Feature Correlation Heatmap')
 plt.show()
